@@ -9,6 +9,8 @@ const TemplateExpressions = () =>{
     return (
         <div>
             <h1>Olá {data.name}, tudo bem?</h1>
+            <h3>Sua idade {data.age}</h3>
+            <h3>Profissão: {data.job}</h3>
         </div>
     )
 
