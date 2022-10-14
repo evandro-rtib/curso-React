@@ -4,6 +4,16 @@ const Events = ()  =>{
         console.log("Ativou o evento!");
     };
 
+    const renderSomenting = (x) => {
+        if (x)
+        {
+            return <h1>Posso retornar isso aqui em um return de função!!!</h1>
+        }
+        else{
+            return <h1>Posso retornar essa outra coisa aqui no return!!!</h1>
+        }
+    }
+
     return(
         <div>
             <div>
@@ -17,8 +27,10 @@ const Events = ()  =>{
                     if (true){
                         console.log("Isso não é bom estar aqui");
                     }
-                }}>Clique aqui também</button>
+                }}>Clique aqui outro</button>
             </div>
+            {renderSomenting(true)}
+            {renderSomenting(false)}
         </div>
     );    
 }
